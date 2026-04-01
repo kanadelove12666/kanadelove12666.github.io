@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yinzhen Huang</title>
+    <meta
+      name="description"
+      content="Personal homepage of Yinzhen Huang, undergraduate student at Beihang University."
+    />
+    <style>
+      :root {
+        --bg: #f7f4ee;
+        --surface: #fffdf8;
+        --text: #22201c;
+        --muted: #70685d;
+        --line: #d8d1c5;
+        --link: #255d8a;
+        --link-hover: #163a57;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Georgia", "Times New Roman", serif;
+        background: linear-gradient(180deg, #f2eee6 0%, var(--bg) 28%, #f9f7f1 100%);
+        color: var(--text);
+        line-height: 1.75;
+      }
+
+      a {
+        color: var(--link);
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: var(--link-hover);
+        text-decoration: underline;
+      }
+
+      .page {
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 32px 24px 72px;
+      }
+
+      .nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+        margin-bottom: 42px;
+        padding-bottom: 14px;
+        border-bottom: 1px solid var(--line);
+        font-size: 0.98rem;
+      }
+
+      .hero {
+        padding-bottom: 28px;
+        border-bottom: 1px solid var(--line);
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(2.3rem, 7vw, 3.2rem);
+        font-weight: 700;
+        letter-spacing: 0.01em;
+      }
+
+      .subtitle {
+        margin-top: 10px;
+        color: var(--muted);
+        font-size: 1.05rem;
+      }
+
+      .contact {
+        margin-top: 18px;
+        font-size: 0.98rem;
+      }
+
+      .contact span {
+        color: var(--muted);
+      }
+
+      main section {
+        padding-top: 34px;
+      }
+
+      h2 {
+        margin: 0 0 14px;
+        font-size: 1.25rem;
+        font-weight: 700;
+      }
+
+      p {
+        margin: 0 0 14px;
+      }
+
+      ul {
+        margin: 0;
+        padding-left: 20px;
+      }
+
+      li + li {
+        margin-top: 8px;
+      }
+
+      .entry {
+        margin-bottom: 18px;
+      }
+
+      .entry-title {
+        font-weight: 700;
+      }
+
+      .entry-meta {
+        color: var(--muted);
+      }
+
+      .publication-title {
+        font-style: italic;
+      }
+
+      .footer {
+        margin-top: 42px;
+        padding-top: 16px;
+        border-top: 1px solid var(--line);
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+
+      @media (max-width: 640px) {
+        .page {
+          padding: 24px 18px 56px;
+        }
+
+        .nav {
+          gap: 10px 12px;
+          margin-bottom: 34px;
+        }
+
+        .subtitle,
+        .contact {
+          font-size: 0.96rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header class="hero">
+        <nav class="nav" aria-label="Section navigation">
+          <a href="#about">About</a>
+          <a href="#interests">Research Interests</a>
+          <a href="#experience">Experience</a>
+          <a href="#publications">Publications</a>
+          <a href="#links">Links</a>
+        </nav>
+
+        <h1>Yinzhen Huang</h1>
+        <p class="subtitle">
+          Undergraduate Student, Beihang University<br />
+          Sep. 2022 - Present
+        </p>
+        <p class="contact">
+          <span>Email:</span>
+          <a href="mailto:22373561_hyz@buaa.edu.cn">22373561_hyz@buaa.edu.cn</a>
+        </p>
+      </header>
+
+      <main>
+        <section id="about">
+          <h2>About Me</h2>
+          <p>
+            I am an undergraduate student at <strong>Beihang University</strong>.
+            My research interests include <strong>Vision-Language Models (VLM)</strong>
+            and <strong>Reinforcement Learning (RL)</strong>.
+          </p>
+          <p>
+            I am currently an intern at
+            <strong>Baidu, Foundation Model Infrastructure Department</strong>
+            (Dec. 10, 2025 - Present).
+          </p>
+        </section>
+
+        <section id="interests">
+          <h2>Research Interests</h2>
+          <ul>
+            <li>Vision-Language Models (VLM)</li>
+            <li>Reinforcement Learning (RL)</li>
+          </ul>
+        </section>
+
+        <section id="experience">
+          <h2>Experience</h2>
+
+          <div class="entry">
+            <div class="entry-title">Beihang University</div>
+            <div>Undergraduate Student</div>
+            <div class="entry-meta">Sep. 2022 - Present</div>
+          </div>
+
+          <div class="entry">
+            <div class="entry-title">Baidu, Foundation Model Infrastructure Department</div>
+            <div>Intern</div>
+            <div class="entry-meta">Dec. 10, 2025 - Present</div>
+          </div>
+        </section>
+
+        <section id="publications">
+          <h2>Publications</h2>
+          <div class="entry">
+            <div class="entry-title publication-title">
+              CCAgent: Coordinating Collaborative Data Scaling for Operating System Agents via Web3
+            </div>
+            <div>
+              <a href="https://dl.acm.org/doi/10.1145/3746252.3761392">Paper</a>
+            </div>
+          </div>
+        </section>
+
+        <section id="links">
+          <h2>Links</h2>
+          <ul>
+            <li>
+              ORCID:
+              <a href="https://orcid.org/0009-0006-3854-8807">0009-0006-3854-8807</a>
+            </li>
+          </ul>
+        </section>
+      </main>
+
+      <footer class="footer">
+        This page is a simple personal homepage built for GitHub Pages.
+      </footer>
+    </div>
+  </body>
+</html>
